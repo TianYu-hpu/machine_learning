@@ -12,8 +12,8 @@ lr = LinearRegression()
 X_train = X_train.reshape(-1, 1)
 #训练模型参数
 lr.fit(X_train, y_train)
-y_train_pred_huber = lr.predict(X_train)
-plt.scatter(X_train, y_train_pred_huber, label="Train Simples")
+y_train_pred_lr = lr.predict(X_train)
+plt.scatter(X_train, y_train_pred_lr, label="Train Simples")
 
 plt.xlabel("online advertising dollars")
 plt.ylabel("monthly e-commenerce sales")
